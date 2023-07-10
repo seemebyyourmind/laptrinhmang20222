@@ -138,11 +138,12 @@ int main() {
             handle_pmsg(clients, client_count, nickname, message);
         }
 
-        // Gửi phản hồi cho client
+        // Gửi phản hồi cho client33
         char response[BUFFER_SIZE];
         sprintf(response, "Received command: %s\n", command);
         send(new_socket, response, strlen(response), 0);
     }
+
 
     return 0;
 }
